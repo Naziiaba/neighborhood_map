@@ -1,0 +1,47 @@
+body {
+	background-color: #b0e0e6;
+	color: #000000;
+}
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+.page-name {
+	background-color: #F5FFFA;
+	font-style: italic;
+}
+.map {
+	height: 95%;
+	padding: 0;
+	margin: 0;
+	color: #000000;
+}
+#search-text {
+	color: #000000;
+	width: 98%;
+	border-radius: 5px;
+	margin-bottom: 35px;
+	margin-top: 20px;
+}
+h1 {
+	text-align: center;
+	color: #2c7e87;
+	font-family: "san-serif";
+	padding: 10px;
+}
+ul {
+	padding: 5px;
+}
+li {
+	list-style-type: none;
+	list-style-position: inside;
+	border: 2px solid;
+	height: 3em;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 5px;
+	cursor: pointer;
+	border-color: #2c7e87;
+}
