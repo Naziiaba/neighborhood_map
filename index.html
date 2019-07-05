@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Neighborhood Map</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<div class="page-name">
+		<h1>London - The City I want to visit one day</h1>
+	</div>
+	<div class="col-md-3">
+		<form class="search">
+			<input data-bind="textInput: filterText" id="search-text" placeholder="Search" type="text"><br>
+		</form>
+		<ul data-bind="foreach: filteredList" id="place-list">
+			<li class="place" data-bind="text: title, click: $parent.clickPlace" id=""></li>
+		</ul>
+	</div>
+	<div class="col-md-9 map">
+		<div class="map" id="map"></div>
+	</div>
+	<script src="js/jquery.min.js">
+	</script> 
+	<script src="js/bootstrap.min.js" type="text/javascript">
+	</script> 
+	<script src="js/knockout-3.4.0.js">
+	</script> 
+	<script src="js/app.js">
+	</script> 
+	<script async defer onerror="mapError()" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNkMc5XTezGuHGjcGFj1j0QQFAWj2tePc&callback=start">
+	</script>
+</body>
+</html>
